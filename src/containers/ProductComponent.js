@@ -8,7 +8,7 @@ const ProductComponent = () => {
         <div className="four column wide">
             <div className="ui link cards">
                 <div className="card">
-                    <div className="image">1sdsadas</div>
+                    <div className="image"></div>
                     <div className="content">
                         <div className="header">{title}</div>
                     </div>
