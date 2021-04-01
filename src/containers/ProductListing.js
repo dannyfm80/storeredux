@@ -8,7 +8,7 @@ const ProductListing = () => {
     const products = useSelector((state)=>state);
     const dispatch = useDispatch();
 
-    const fetchproducts = async () => {
+    const fetchProducts = async () => {
         const response = await axios.get("https://fakestoreapi.com/products")
         .catch((err)=>{
             console.log("Connexion error", err)
@@ -16,9 +16,9 @@ const ProductListing = () => {
         dispatch(setProducts(response.data));
     }
 
-    useEffect(()=>{
-        fetchproducts();
-    }, []);
+   useEffect(() => {
+    fetchProducts();
+  }, []);
 
     console.log("Products: ", products);
     return (
